@@ -1,8 +1,12 @@
 {
-  "rewrites":[
+  "rewrites": [
     {
-      "source":"/livestream",
-      "destination":"https://livestreamecell.vercel.app"
+      "source": "/livestream",
+      "destination": "https://livestreamecell.vercel.app"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
