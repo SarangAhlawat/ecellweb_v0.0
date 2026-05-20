@@ -7,7 +7,9 @@ return(
 <nav className="nav">
 
 <div className="logo">
-E-CELL CGC
+    <Link to="/">
+        E-CELL CGC
+    </Link>
 </div>
 
 <div className="links">
