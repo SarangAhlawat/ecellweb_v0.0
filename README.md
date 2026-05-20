@@ -1,16 +1,31 @@
-# React + Vite
+# E-CELL CGC — Temporary Landing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A temporary launch website for E-CELL CGC built using React and Vite. Designed as a professional holding page while the full platform is under development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Premium dark charcoal UI
+- Metallic typography styling
+- Responsive design
+- Smooth animations with Framer Motion
+- About page
+- Livestream route support via Vercel rewrites
+- E-Summit'26 navigation
+- Vercel deployment ready
 
-## React Compiler
+## Routes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `/` → Landing page  
+- `/about` → About E-CELL  
+- `/livestream` → Rewritten to livestream deployment  
+- `esummit.ecellcgc.in` → E-Summit website
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router DOM
+- Framer Motion
+- CSS
+
+Built for E-CELL CGC 🚀

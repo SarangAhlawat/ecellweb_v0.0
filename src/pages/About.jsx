@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar";
-import { motion } from "framer-motion";
+import Navbar from "../components/Navbar"
+import {motion} from "framer-motion"
 
-export default function About() {
+export default function About(){
 
 const cards=[
 
@@ -12,12 +12,12 @@ desc:"Transforming ideas into practical solutions through creativity and experim
 
 {
 title:"Community",
-desc:"Building a network of ambitious students, founders and innovators."
+desc:"Building a network of ambitious students founders and innovators."
 },
 
 {
 title:"Learning",
-desc:"Workshops, speaker sessions and hands-on experiences from industry experts."
+desc:"Workshops speaker sessions and hands-on experiences from industry experts."
 },
 
 {
@@ -29,58 +29,118 @@ desc:"Creating future leaders who build ventures and solve real-world problems."
 
 return(
 
-<div className="aboutPage">
+<div
+className="
+min-h-screen
+bg-gradient-to-b
+from-[#080808]
+to-[#111111]"
+>
 
 <Navbar/>
 
-<section className="aboutHero">
 
-<motion.h1
-initial={{opacity:0,y:30}}
-animate={{opacity:1,y:0}}
-transition={{duration:0.8}}
-className="metal"
+<section
+className="
+pt-32
+px-[10%]
+max-w-[1100px]
+mx-auto
+text-center"
+>
+
+<h1
+className="
+metal
+font-extrabold
+text-5xl
+md:text-7xl
+mb-8"
 >
 
 About E-CELL CGC
 
-</motion.h1>
+</h1>
 
-<p>
+
+<p
+className="
+max-w-[800px]
+mx-auto
+text-white/70
+leading-9"
+>
 
 E-CELL CGC is building a culture where ideas,
 innovation and entrepreneurship thrive.
 
 We connect students with opportunities,
 mentorship and experiences that encourage
-them to create, collaborate and lead.
+them to create collaborate and lead.
 
 </p>
 
 </section>
 
 
-<section className="mission">
 
-<div>
+<section
+className="
+grid
+md:grid-cols-2
+gap-10
+px-[10%]
+py-28"
+>
 
-<h2>Our Mission</h2>
+<div
+className="
+p-10
+rounded-[28px]
+bg-white/[0.03]
+border border-white/5
+backdrop-blur-xl
+hover:-translate-y-2
+transition
+hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
+>
 
-<p>
+<h2 className="text-3xl mb-6 font-bold">
+
+Our Mission
+
+</h2>
+
+<p className="text-white/70 leading-8">
 
 To empower students with entrepreneurial
-mindsets through workshops, networking,
-startup exposure and leadership opportunities.
+mindsets through workshops networking startup
+exposure and leadership opportunities.
 
 </p>
 
 </div>
 
-<div>
 
-<h2>Our Vision</h2>
+<div
+className="
+p-10
+rounded-[28px]
+bg-white/[0.03]
+border border-white/5
+backdrop-blur-xl
+hover:-translate-y-2
+transition
+hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
+>
 
-<p>
+<h2 className="text-3xl mb-6 font-bold">
+
+Our Vision
+
+</h2>
+
+<p className="text-white/70 leading-8">
 
 To establish a strong entrepreneurial ecosystem
 where students become creators and problem-solvers.
@@ -93,45 +153,101 @@ where students become creators and problem-solvers.
 
 
 
-<section className="values">
+<section
+className="
+px-[10%]
+text-center"
+>
 
-<h2>What Drives Us</h2>
+<h2
+className="
+text-4xl md:text-5xl
+font-bold
+mb-16"
+>
 
-<div className="cardGrid">
+What Drives Us
+
+</h2>
+
+
+<div
+className="
+grid
+sm:grid-cols-2
+lg:grid-cols-4
+gap-8"
+>
 
 {
-
 cards.map((item,index)=>(
 
 <motion.div
 
 key={index}
 
-initial={{opacity:0,y:40}}
-whileInView={{opacity:1,y:0}}
+initial={{
+opacity:0,
+y:40
+}}
+
+whileInView={{
+opacity:1,
+y:0
+}}
+
+viewport={{
+once:true
+}}
 
 transition={{
 delay:index*.15
 }}
 
-viewport={{once:true}}
-
-className="valueCard"
-
+className="
+relative
+overflow-hidden
+p-9
+rounded-[24px]
+bg-gradient-to-br
+from-[#161616]
+to-[#0c0c0c]
+border border-white/5
+hover:-translate-y-2
+transition
+hover:shadow-[0_0_40px_rgba(255,255,255,0.07)]"
 >
 
-<h3>
+<div
+className="
+absolute
+w-[200px]
+h-[200px]
+top-[-100px]
+right-[-100px]
+bg-radial-[rgba(255,255,255,.04),transparent]"
+/>
+
+<h3
+className="
+text-2xl
+font-bold
+mb-4"
+>
+
 {item.title}
+
 </h3>
 
-<p>
+<p className="leading-8 text-white/70">
+
 {item.desc}
+
 </p>
 
 </motion.div>
 
 ))
-
 }
 
 </div>
@@ -140,43 +256,106 @@ className="valueCard"
 
 
 
-<section className="timeline">
+<section
+className="
+py-32
+px-[10%]
+text-center"
+>
 
-<h2>Journey Ahead</h2>
+{/* <h2
+className="
+text-4xl md:text-5xl
+font-bold
+mb-16"
+>
 
-<div className="timelineLine">
+Journey Ahead
 
-<div className="step">
-<span>01</span>
-<p>Workshops</p>
+</h2> */}
+
+
+{/* <div
+className="
+flex
+flex-wrap
+justify-center
+gap-8"
+>
+
+{["Workshops","Startup Events","E-Summit 2026","Build Ecosystem"]
+.map((item,index)=>(
+
+<div
+
+key={index}
+
+className="
+w-[180px]
+h-[180px]
+rounded-full
+bg-gradient-to-br
+from-[#151515]
+to-[#090909]
+border border-white/5
+flex
+flex-col
+justify-center
+items-center
+hover:scale-105
+transition
+hover:shadow-[0_0_30px_rgba(255,255,255,0.07)]"
+>
+
+<span
+className="
+metal
+font-extrabold
+text-4xl"
+>
+
+0{index+1}
+
+</span>
+
+<p className="mt-2 text-white/70">
+
+{item}
+
+</p>
+
 </div>
 
-<div className="step">
-<span>02</span>
-<p>Startup Events</p>
-</div>
+))}
 
-<div className="step">
-<span>03</span>
-<p>E-Summit 2026</p>
-</div>
-
-<div className="step">
-<span>04</span>
-<p>Build Ecosystem</p>
-</div>
-
-</div>
+</div> */}
 
 </section>
 
 
-<footer>
 
-<h3>E-CELL CGC</h3>
+<footer
+className="
+py-16
+text-center
+border-t border-white/5"
+>
 
-<p>
+<h3
+className="
+text-3xl
+font-bold
+mb-3"
+>
+
+E-CELL CGC
+
+</h3>
+
+<p className="text-white/60">
+
 Innovate • Build • Lead
+
 </p>
 
 </footer>
