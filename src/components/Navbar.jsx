@@ -1,13 +1,17 @@
+import {useState} from "react";
 import {Link} from "react-router-dom";
 
 export default function Navbar(){
+
+const [isOpen,setIsOpen]=useState(false);
 
 return(
 
 <nav
 className="sticky top-0 z-50
-flex justify-between items-center
-px-[8%] py-6
+flex flex-wrap items-center justify-between
+gap-4
+px-5 sm:px-[8%] py-4 sm:py-6
 bg-black/60
 backdrop-blur-xl
 border-b border-white/5"
@@ -15,7 +19,7 @@ border-b border-white/5"
 
 <div
 className="
-text-2xl md:text-3xl
+text-xl sm:text-2xl md:text-3xl
 font-extrabold
 tracking-[2px]
 metal"
@@ -23,10 +27,29 @@ metal"
 <Link to="/">E-CELL CGC</Link>
 </div>
 
+<button
+type="button"
+onClick={()=>setIsOpen((value)=>!value)}
+aria-expanded={isOpen}
+aria-label="Toggle navigation menu"
+className="
+md:hidden
+inline-flex items-center justify-center
+w-11 h-11
+rounded-full
+border border-white/10
+bg-white/5
+text-white/90"
+>
+
+<span className="text-xl leading-none">☰</span>
+
+</button>
 
 <div
 className="
-flex items-center
+hidden md:flex
+items-center
 gap-5 md:gap-9
 text-sm text-white/80"
 >
@@ -76,6 +99,7 @@ LiveStream
 <a
 href="https://esummit.ecellcgc.in"
 target="_blank"
+rel="noreferrer"
 className="
 hover:text-white
 transition
@@ -93,6 +117,57 @@ after:transition-all"
 E-Summit'26
 
 </a>
+
+</div>
+
+<div
+className={`
+w-full md:hidden
+overflow-hidden
+transition-all duration-300 ease-out
+${isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+>
+
+<div className="
+flex flex-col
+gap-3
+pt-4
+border-t border-white/10
+text-sm text-white/80">
+
+<Link
+to="/about"
+onClick={()=>setIsOpen(false)}
+className="py-2 hover:text-white transition"
+>
+
+About
+
+</Link>
+
+<a
+href="/livestream"
+onClick={()=>setIsOpen(false)}
+className="py-2 hover:text-white transition"
+>
+
+LiveStream
+
+</a>
+
+<a
+href="https://esummit.ecellcgc.in"
+target="_blank"
+rel="noreferrer"
+onClick={()=>setIsOpen(false)}
+className="py-2 hover:text-white transition"
+>
+
+E-Summit'26
+
+</a>
+
+</div>
 
 </div>
 

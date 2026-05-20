@@ -42,8 +42,8 @@ to-[#111111]"
 
 <section
 className="
-pt-32
-px-[10%]
+pt-24 sm:pt-32
+px-5 sm:px-[10%]
 max-w-[1100px]
 mx-auto
 text-center"
@@ -53,7 +53,7 @@ text-center"
 className="
 metal
 font-extrabold
-text-5xl
+text-4xl sm:text-5xl
 md:text-7xl
 mb-8"
 >
@@ -68,7 +68,8 @@ className="
 max-w-[800px]
 mx-auto
 text-white/70
-leading-9"
+leading-7 sm:leading-9
+text-sm sm:text-base"
 >
 
 E-CELL CGC is building a culture where ideas,
@@ -88,14 +89,14 @@ them to create collaborate and lead.
 className="
 grid
 md:grid-cols-2
-gap-10
-px-[10%]
-py-28"
+gap-6 sm:gap-10
+px-5 sm:px-[10%]
+py-16 sm:py-28"
 >
 
 <div
 className="
-p-10
+p-6 sm:p-10
 rounded-[28px]
 bg-white/[0.03]
 border border-white/5
@@ -105,13 +106,13 @@ transition
 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
 >
 
-<h2 className="text-3xl mb-6 font-bold">
+<h2 className="text-2xl sm:text-3xl mb-4 sm:mb-6 font-bold">
 
 Our Mission
 
 </h2>
 
-<p className="text-white/70 leading-8">
+<p className="text-white/70 leading-7 sm:leading-8 text-sm sm:text-base">
 
 To empower students with entrepreneurial
 mindsets through workshops networking startup
@@ -124,7 +125,7 @@ exposure and leadership opportunities.
 
 <div
 className="
-p-10
+p-6 sm:p-10
 rounded-[28px]
 bg-white/[0.03]
 border border-white/5
@@ -134,13 +135,13 @@ transition
 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
 >
 
-<h2 className="text-3xl mb-6 font-bold">
+<h2 className="text-2xl sm:text-3xl mb-4 sm:mb-6 font-bold">
 
 Our Vision
 
 </h2>
 
-<p className="text-white/70 leading-8">
+<p className="text-white/70 leading-7 sm:leading-8 text-sm sm:text-base">
 
 To establish a strong entrepreneurial ecosystem
 where students become creators and problem-solvers.
@@ -155,15 +156,15 @@ where students become creators and problem-solvers.
 
 <section
 className="
-px-[10%]
+px-5 sm:px-[10%]
 text-center"
 >
 
 <h2
 className="
-text-4xl md:text-5xl
+text-3xl sm:text-4xl md:text-5xl
 font-bold
-mb-16"
+mb-10 sm:mb-16"
 >
 
 What Drives Us
@@ -176,7 +177,7 @@ className="
 grid
 sm:grid-cols-2
 lg:grid-cols-4
-gap-8"
+gap-5 sm:gap-8"
 >
 
 {
@@ -207,7 +208,7 @@ delay:index*.15
 className="
 relative
 overflow-hidden
-p-9
+p-6 sm:p-9
 rounded-[24px]
 bg-gradient-to-br
 from-[#161616]
@@ -221,16 +222,16 @@ hover:shadow-[0_0_40px_rgba(255,255,255,0.07)]"
 <div
 className="
 absolute
-w-[200px]
-h-[200px]
-top-[-100px]
-right-[-100px]
+w-[160px] sm:w-[200px]
+h-[160px] sm:h-[200px]
+top-[-80px] sm:top-[-100px]
+right-[-80px] sm:right-[-100px]
 bg-radial-[rgba(255,255,255,.04),transparent]"
 />
 
 <h3
 className="
-text-2xl
+text-xl sm:text-2xl
 font-bold
 mb-4"
 >
@@ -239,7 +240,7 @@ mb-4"
 
 </h3>
 
-<p className="leading-8 text-white/70">
+<p className="leading-7 sm:leading-8 text-white/70 text-sm sm:text-base">
 
 {item.desc}
 
@@ -258,8 +259,8 @@ mb-4"
 
 <section
 className="
-py-32
-px-[10%]
+py-20 sm:py-32
+px-5 sm:px-[10%]
 text-center"
 >
 

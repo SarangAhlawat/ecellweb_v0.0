@@ -19,8 +19,8 @@ glow"
 <section
 
 className="
-min-h-[85vh]
-px-5
+min-h-[82vh]
+px-5 sm:px-6
 flex
 flex-col
 items-center
@@ -47,9 +47,10 @@ duration:0.8
 className="
 metal
 font-extrabold
-text-5xl
+text-4xl sm:text-5xl
 md:text-8xl
 leading-none
+tracking-tight
 drop-shadow-[0_0_35px_rgba(255,255,255,0.10)]"
 >
 
@@ -60,7 +61,7 @@ E-CELL CGC
 
 <h2
 className="
-text-2xl
+text-xl sm:text-2xl
 md:text-4xl
 font-semibold
 mt-6"
@@ -71,45 +72,47 @@ Where Ideas Take Life.
 </h2>
 
 
-<p
+<div
 className="
 max-w-[700px]
 mt-6
-leading-8"
+leading-7 sm:leading-8
+text-sm sm:text-base"
 >
 
-{/* <strong className="text-lg">Website launching soon</strong> */}
 <motion.strong
-  className="
-    text-lg
-    font-semibold
-    inline-block
-    text-violet-600
-    mt-2
-  "
+className="
+text-base sm:text-lg
+font-semibold
+inline-block
+text-violet-600"
 >
-  Website launching soon
+
+Website launching soon
+
 </motion.strong>
 
-<br/>
+<p className="mt-2 text-white/65">
 
-<p className="text-white/65">Workshops • Startups • Networking</p>
+Workshops • Startups • Networking
 
 </p>
+
+</div>
 
 
 <div
 className="
 flex flex-wrap
 justify-center
-gap-5
+gap-4 sm:gap-5
 mt-12"
 >
 
 <a
 href="/about"
 className="
-px-8 py-4
+px-6 sm:px-8 py-3.5 sm:py-4
 rounded-xl
 bg-gradient-to-br
 from-[#171717]
@@ -128,7 +131,7 @@ About Us
 <a
 href="/livestream"
 className="
-px-8 py-4
+px-6 sm:px-8 py-3.5 sm:py-4
 rounded-xl
 bg-gradient-to-br
 from-[#171717]
