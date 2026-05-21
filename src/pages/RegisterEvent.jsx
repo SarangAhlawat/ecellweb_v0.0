@@ -31,7 +31,7 @@ src="/poster.png"
 alt="Design Thinking Event"
 className="
 w-full
-h-[150px]
+h-[100px]
 md:h-[260px]
 object-cover"
 />
