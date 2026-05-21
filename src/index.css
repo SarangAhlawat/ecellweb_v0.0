@@ -97,20 +97,10 @@ transition:.3s;
 .field:focus{
 
 border-color:
-rgba(
-255,
-215,
-0,
-0.6
-);
+rgba(157, 0, 255, 0.6);
 
 box-shadow:
 0 0 20px
-rgba(
-255,
-215,
-0,
-0.08
-);
+rgba(0, 17, 255, 0.08);
 
 }
