@@ -128,7 +128,7 @@ About Us
 </a>
 
 
-<a
+{/* <a
 href="/livestream"
 className="
 px-6 sm:px-8 py-3.5 sm:py-4
@@ -144,7 +144,26 @@ hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
 
 Watch Live
 
+</a> */}
+
+<a
+href="/registerevent"
+className="
+px-6 sm:px-8 py-3.5 sm:py-4
+rounded-xl
+bg-gradient-to-br
+from-[#171717]
+to-[#0c0c0c]
+border border-white/10
+hover:-translate-y-1.5
+transition
+hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
+>
+
+Register For Live Session
+
 </a>
+
 
 </div>
 
