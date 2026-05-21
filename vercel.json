@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/live",
-      "destination": "https://livestreamecell.vercel.app"
+      "destination": "https://livestream-ecell.vercel.app/"
     },
     {
       "source": "/(.*)",
