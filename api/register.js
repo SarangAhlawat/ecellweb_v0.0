@@ -16,6 +16,7 @@ const {
 
 name,
 email,
+phone,
 city,
 designation,
 
@@ -43,6 +44,7 @@ INSERT INTO registrations(
 
 name,
 email,
+phone,
 city,
 designation,
 
@@ -67,6 +69,7 @@ VALUES(
 
 ${name},
 ${email},
+${phone},
 ${city},
 ${designation},
 

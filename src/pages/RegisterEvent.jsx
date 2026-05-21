@@ -29,6 +29,7 @@ export default function RegisterEvent() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        phone:"",
         city: "",
         designation: "",
         college: "",
@@ -272,6 +273,28 @@ export default function RegisterEvent() {
                             {errors.email && (
                                 <p className="mt-1 text-sm text-red-500">{errors.email}</p>
                             )}
+                        </div>
+
+                        <div>
+                            <input
+                                type="tel"
+                                placeholder="Phone Number"
+                                className="field"
+
+                                pattern="[6-9]{1}[0-9]{9}"
+                                maxLength={10}
+
+                                value={formData.phone}
+
+                                onChange={(e)=>
+                                    setFormData({
+                                        ...formData,
+                                        phone:e.target.value.replace(/\D/g,'')
+                                    })
+                                }
+
+                                required
+                            />
                         </div>
 
                         <div>
