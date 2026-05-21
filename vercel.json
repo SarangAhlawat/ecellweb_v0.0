@@ -1,9 +1,17 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/live",
-      "destination": "https://livestream-ecell.vercel.app/"
+      "destination": "https://livestream-ecell.vercel.app",
+      "permanent": false
     },
+    {
+      "source": "/live/(.*)",
+      "destination": "https://livestream-ecell.vercel.app/$1",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
