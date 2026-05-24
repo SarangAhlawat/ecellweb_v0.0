@@ -1,5 +1,5 @@
 import { neon } from "@neondatabase/serverless";
-import Resend from "@resend/node";
+import Resend from "resend";
 
 const sql = neon(process.env.DATABASE_URL);
 const resend = new Resend(process.env.RESEND_API_KEY);
