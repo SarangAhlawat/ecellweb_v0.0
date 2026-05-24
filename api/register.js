@@ -125,14 +125,14 @@ export default async function handler(req, res) {
         </div>
 
         <!-- Body -->
-        <div style="padding:28px;">
+        <div style="padding:10px;">
 
             <!-- User Details -->
             <div style="background:rgba(255,255,255,.03);
                         border:1px solid rgba(255,255,255,.08);
                         border-radius:18px;
-                        padding:20px;
-                        margin-bottom:22px;">
+                        padding:15px;
+                        margin-bottom:15px;">
 
                 <h2 style="margin:0 0 18px;
                            color:#c4b5fd;
@@ -177,7 +177,7 @@ export default async function handler(req, res) {
             <div style="background:linear-gradient(145deg,#151528,#1d1d35);
                         border:1px solid rgba(139,92,246,.35);
                         border-radius:20px;
-                        padding:22px;">
+                        padding:15px;">
 
                 <div style="display:inline-block;
                             background:rgba(124,58,237,.15);
@@ -251,7 +251,7 @@ export default async function handler(req, res) {
                 color:#7c7c9b;
                 font-size:12px;">
         © E-Cell CGC •
-        <a href="https://ecellcgc.in/privacy"
+        <a href="https://ecellcgc.in/privacy-policy"
            style="color:#a78bfa;text-decoration:none;">
            Privacy Policy
         </a>
