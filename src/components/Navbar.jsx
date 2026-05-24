@@ -76,7 +76,7 @@ About
 
 
 <a
-href="/livestream"
+href="https://livestream-ecell.vercel.app"
 className="
 hover:text-white
 transition
@@ -91,7 +91,7 @@ hover:after:w-full
 after:transition-all"
 >
 
-LiveStream
+Live
 
 </a>
 
