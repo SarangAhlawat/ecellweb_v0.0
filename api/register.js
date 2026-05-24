@@ -1,5 +1,10 @@
+/* global process */
+
 import { neon } from "@neondatabase/serverless";
+import { Resend } from "resend";
+
 const sql = neon(process.env.DATABASE_URL);
+const resend = new Resend(process.env.RESEND_API_KEY);
 const FROM_EMAIL = process.env.EMAIL_FROM || "E-Cell <no-reply@yourdomain.com>";
 
 export default async function handler(req, res) {
@@ -255,36 +260,18 @@ export default async function handler(req, res) {
 </div>
 `;
 
-        // Send confirmation email using Resend (lazy import to avoid module load failures)
-        let resendClient = null;
+        // Send confirmation email using Resend
         try {
-            if (process.env.RESEND_API_KEY) {
-                const ResendModule = await import('resend');
-                const ResendClass = ResendModule.default || ResendModule.Resend || ResendModule;
-                resendClient = new ResendClass(process.env.RESEND_API_KEY);
-            } else {
-                console.warn('RESEND_API_KEY not set; skipping email send.');
-            }
-        } catch (impErr) {
-            console.error('Resend SDK import failed:', impErr);
-        }
-
-        if (resendClient && resendClient.emails && typeof resendClient.emails.send === 'function') {
-            try {
-                await resendClient.emails.send({
-                    from: FROM_EMAIL,
-                    to: email,
-                    subject: `Registration Confirmed — E-Cell Session`,
-                    html
-                });
-            } catch (mailErr) {
-                console.error('Email send failed:', mailErr);
-                // Do not fail the whole request if email sending fails; return registration success but note warning
-                return res.status(200).json({ success: true, emailSent: false, warning: 'Registration saved but confirmation email failed to send.' });
-            }
-        } else {
-            console.warn('Resend client unavailable; skipping email send.');
-            return res.status(200).json({ success: true, emailSent: false, warning: 'Registration saved but confirmation email was not sent (Resend unavailable).' });
+            await resend.emails.send({
+                from: FROM_EMAIL,
+                to: email,
+                subject: `Registration Confirmed — E-Cell Session`,
+                html
+            });
+        } catch (mailErr) {
+            console.error('Email send failed:', mailErr);
+            // Do not fail the whole request if email sending fails; return registration success but note warning
+            return res.status(200).json({ success: true, emailSent: false, warning: 'Registration saved but confirmation email failed to send.' });
         }
 
         return res.status(200).json({ success: true, emailSent: true });

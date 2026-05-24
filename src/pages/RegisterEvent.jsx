@@ -126,7 +126,17 @@ export default function RegisterEvent() {
                 }),
             });
 
-            const data = await response.json();
+            const responseText = await response.text();
+            let data = {};
+
+            try {
+                data = responseText ? JSON.parse(responseText) : {};
+            } catch {
+                data = {
+                    success: false,
+                    message: responseText || "Registration failed. Please try again.",
+                };
+            }
 
             if (data.success) {
                 // Save registration info and show instructions instead of alert
