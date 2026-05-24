@@ -265,7 +265,7 @@ export default async function handler(req, res) {
             await resend.emails.send({
                 from: FROM_EMAIL,
                 to: email,
-                subject: `Registration Confirmed — E-Cell Session`,
+                subject: `Registration Confirmed for E-Cell Live Session`,
                 html
             });
         } catch (mailErr) {
