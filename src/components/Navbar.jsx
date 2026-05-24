@@ -146,12 +146,12 @@ About
 </Link>
 
 <a
-href="/livestream"
+href="https://livestream-ecell.vercel.app"
 onClick={()=>setIsOpen(false)}
 className="py-2 hover:text-white transition"
 >
 
-LiveStream
+Live
 
 </a>
 

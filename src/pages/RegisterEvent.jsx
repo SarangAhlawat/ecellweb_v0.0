@@ -181,7 +181,7 @@ export default function RegisterEvent() {
             <Navbar />
 
             {isRegistered ? (
-                        <div className="p-6 rounded-[20px] bg-white/[0.04] border border-white/6">
+                        <div className="p-6 rounded-[20px] bg-white/[0.04] border border-white/6 m-4">
                             <h3 className="text-2xl font-bold mb-2">You're registered!</h3>
                             <p className="text-white/80">{registrationInfo?.message}</p>
 
@@ -196,7 +196,7 @@ export default function RegisterEvent() {
                             <div className="mt-4 text-white/70">
                                 <p className="mb-2">Important instructions:</p>
                                 <ul className="list-disc ml-5 space-y-1 text-sm">
-                                    <li>Join the session at: <a href={registrationInfo?.joinLink} target="_blank" rel="noreferrer" className="text-violet-300">ecellcgc.in/live</a> at 3:00 PM.</li>
+                                    <li>Join the session at: <a href={registrationInfo?.joinLink} target="_blank" rel="noreferrer" className="text-violet-300">ecellcgc.in/live</a> at 3:00 PM on 29 May.</li>
                                     <li>Certificates will be shared with attendees.</li>
                                 </ul>
                             </div>
