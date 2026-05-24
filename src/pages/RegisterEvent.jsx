@@ -209,14 +209,14 @@ export default function RegisterEvent() {
                                     Copy join link
                                 </button>
 
-                                <a
+                                {/* <a
                                     href={registrationInfo?.joinLink || 'https://ecellcgc.in/live'}
                                     target="_blank"
                                     rel="noreferrer"
                                     className="px-4 py-2 rounded-md bg-white/5 text-white"
                                 >
                                     Open link 
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     ) : (
