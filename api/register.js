@@ -95,7 +95,7 @@ export default async function handler(req, res) {
 
                 // Build a concise, responsive HTML email (white + violet metallic theme)
                 const html = `
-    <div style="font-family:'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif;background:#0b0b14;padding:30px 15px;color:#e5e7eb;">
+    <div style="font-family:'Space Grotesk','IBM Plex Sans','Segoe UI',Arial,sans-serif">
 
     <div style="max-width:620px;margin:0 auto;background:#12121f;border:1px solid #27273b;border-radius:22px;overflow:hidden;box-shadow:0 0 30px rgba(124,58,237,.15);">
 
