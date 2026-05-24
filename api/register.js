@@ -5,7 +5,7 @@ import { Resend } from "resend";
 
 const sql = neon(process.env.DATABASE_URL);
 const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM_EMAIL = process.env.EMAIL_FROM || "E-Cell CGC <no-reply@ecellcgc.in>";
+const FROM_EMAIL = process.env.EMAIL_FROM || "E-Cell CGC <live@ecellcgc.in>";
 
 export default async function handler(req, res) {
 
