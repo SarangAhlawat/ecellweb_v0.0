@@ -241,7 +241,7 @@ export default function RegisterEvent() {
                     </p>
                 </motion.div>
 
-                <section className="rounded-[30px] border border-white/5 bg-white/[0.03] p-8 backdrop-blur-xl md:p-8">
+                <section className="rounded-[30px] border border-white/50 bg-white/[0.03] p-6 backdrop-blur-xl md:p-6">
                     <h2 className="mb-2 text-2xl text-violet-500 font-bold">Reserve Your Seat</h2>
 
                     <p className="mb-8 text-white/60">
