@@ -147,7 +147,7 @@ Watch Live
 </a> */}
 
 <a
-href="https://youtube.com/live/x4g3A5tHYEM?feature=share"
+href="https://meet.google.com/pdf-ijrf-bpb"
 className="
 px-6 sm:px-8 py-3.5 sm:py-4
 rounded-xl

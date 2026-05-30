@@ -76,7 +76,7 @@ About
 
 
 <a
-href="https://youtube.com/live/x4g3A5tHYEM?feature=share"
+href="https://meet.google.com/pdf-ijrf-bpb"
 className="
 hover:text-white
 transition
