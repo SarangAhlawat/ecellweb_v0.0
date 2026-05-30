@@ -147,7 +147,7 @@ Watch Live
 </a> */}
 
 <a
-href="/registerevent"
+href="https://youtube.com/live/x4g3A5tHYEM?feature=share"
 className="
 px-6 sm:px-8 py-3.5 sm:py-4
 rounded-xl
@@ -160,7 +160,7 @@ transition
 hover:shadow-[0_0_25px_rgba(255,255,255,0.08)]"
 >
 
-Register For Live Session
+Join Live
 
 </a>
 

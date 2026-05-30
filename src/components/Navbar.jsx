@@ -76,7 +76,7 @@ About
 
 
 <a
-href="https://livestream-ecell.vercel.app"
+href="https://youtube.com/live/x4g3A5tHYEM?feature=share"
 className="
 hover:text-white
 transition
