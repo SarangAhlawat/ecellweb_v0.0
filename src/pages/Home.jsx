@@ -147,7 +147,7 @@ Watch Live
 </a> */}
 
 <a
-href="https://meet.google.com/pdf-ijrf-bpb"
+href="/registerevent"
 className="
 px-6 sm:px-8 py-3.5 sm:py-4
 rounded-xl

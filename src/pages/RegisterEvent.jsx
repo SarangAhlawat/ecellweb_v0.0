@@ -235,8 +235,8 @@ export default function RegisterEvent() {
                     animate={{ opacity: 1, y: 0 }}
                     className="mb-8 text-center"
                 >
-                    <div className="metal-violet text-sm tracking-[4px]">
-                        E-CELL CGC LANDRAN PRESENTS
+                    <div className="text-orange-500 text-sm tracking-[4px]">
+                        (SESSION ENDED)
                     </div>
 
                     <h1 className="metal mt-3 text-4xl font-extrabold md:text-6xl">

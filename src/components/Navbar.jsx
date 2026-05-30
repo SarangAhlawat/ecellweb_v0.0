@@ -76,7 +76,7 @@ About
 
 
 <a
-href="https://meet.google.com/pdf-ijrf-bpb"
+href="https://livestream-ecell.vercel.app"
 className="
 hover:text-white
 transition
